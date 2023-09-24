@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ReUsableForm from './components/reusableForm/ReUsableForm'
+import Grandpa from './components/grandpa/Grandpa'
 // import SimpleForm from './components/simpleForm/SimpleForm'
 // import StatefulForm from './components/statefuForm/StatefulForm'
 // import RefForm from './components/refForm/RefForm'
@@ -20,12 +21,15 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>Form Master</h1>
+
+      <Grandpa></Grandpa>
+      
       {/* <SimpleForm></SimpleForm> */}
       {/* <StatefulForm></StatefulForm> */}
       {/* <RefForm></RefForm> */}
       {/* <HookForm></HookForm> */}
-      <ReUsableForm formTitle = 'Sign Up' handleSubmit={handleSignSubmit}>
+      {/* <ReUsableForm formTitle = 'Sign Up' handleSubmit={handleSignSubmit}>
         <div>
           <h2>Sign Up</h2>
           <p>Please sign up right now</p>
@@ -37,7 +41,7 @@ function App() {
           <h2>Update Profile</h2>
           <p>Please always keep your profile updated</p>
         </div>
-      </ReUsableForm>
+      </ReUsableForm> */}
     </>
   )
 }
